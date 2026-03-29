@@ -41,19 +41,19 @@ const projects: Project[] = [
     github: "https://github.com/yashyegare/helmet-detection",
     demo: null,
   },
-  // {
-  //   id: 3,
-  //   title: "Covid Data Tracker",
-  //   description:
-  //     "API, OCR, and data extraction to track Covid cases in Montes Claros - Brazil.",
-  //   image: null,
-  //   tags: ["Python", "Go", "Docker"],
-  //   github: "https://github.com/mgiovani/mocorona",
-  //   demo: null,
-  // },
+  {
+    id: 3,
+    title: "Business Website",
+    description:
+      "A B2B agro-commodity digital storefront to drive bulk trading inquiries.",
+    image: "/images/sachin_gold.png",
+    tags: ["JS", "HTML", "Bootstrap", "PHP"],
+    github: "https://github.com/yashyegare/sachin_gold",
+    demo: "https://sachingold.com/",
+  },
 ]
 
-export const featuredProjects = [projects[0], projects[1], projects[2]]
+export const featuredProjects = [projects[0], projects[1], projects[2], projects[3]]
 
 export default {
   projects,
