@@ -1,26 +1,8 @@
-import type React from "react"
-import type { Metadata } from "next/dist/lib/metadata/types/metadata-interface"
-import ClientLayout from "./ClientLayout"
-import { Analytics } from '@vercel/analytics/react';
- 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <head>
-        <title>Yash Yegare | Portfolio</title>
-      </head>
-      <body>
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  );
-}
-
+import type React from "react";
+import type { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
+import ClientLayout from "./ClientLayout";
+import { Analytics } from "@vercel/analytics/react";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
@@ -29,7 +11,14 @@ export const metadata: Metadata = {
   },
   description:
     "Senior Software Engineer specializing in backend development with Python, FastAPI, and cloud solutions.",
-  keywords: ["Software Engineer", "Python Developer", "FastAPI", "GraphQL", "Backend Development", "Yash Yegare"],
+  keywords: [
+    "Software Engineer",
+    "Python Developer",
+    "FastAPI",
+    "GraphQL",
+    "Backend Development",
+    "Yash Yegare",
+  ],
   authors: [{ name: "Yash Yegare" }],
   creator: "Yash Yegare",
   openGraph: {
@@ -52,16 +41,20 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
-  return <ClientLayout>{children}</ClientLayout>
+  return (
+    <html lang="en">
+      <body>
+        <ClientLayout>{children}</ClientLayout>
+        <Analytics />
+      </body>
+    </html>
+  );
 }
-
-
-import './globals.css'
