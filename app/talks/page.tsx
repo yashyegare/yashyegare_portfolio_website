@@ -8,7 +8,7 @@ import { PlaceholderImage } from "@/components/ui/placeholder-image"
 export const metadata = {
   title: "Talks & Presentations",
   description:
-    "Conference talks, workshops, and presentations delivered by Giovani Moutinho on software engineering topics.",
+    "Conference talks, workshops, and presentations delivered by Yash Yegare on software engineering topics.",
 }
 
 // Sample talks data

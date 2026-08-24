@@ -103,7 +103,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       description: post.content.substring(0, 160).replace(/<[^>]*>/g, "") + "...",
       type: "article",
       publishedTime: post.date,
-      authors: ["Giovani Moutinho"],
+      authors: ["Yash Yegare"],
       tags: post.tags,
     },
     twitter: {

@@ -12,6 +12,9 @@ import resumeData from "@/data/resume-data"
 export const metadata = {
   title: "Resume",
   description: `Professional experience, skills, and qualifications of ${resumeData.personalInfo.name}, ${resumeData.personalInfo.title}.`,
+  alternates: {
+    canonical: "/resume",
+  },
 }
 
 export default function ResumePage() {

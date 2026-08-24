@@ -6,6 +6,9 @@ import resumeData from "@/data/resume-data"
 export const metadata = {
   title: "Contact",
   description: `Get in touch with Yash Yegare for opportunities, collaborations, or just to say hello.`,
+  alternates: {
+    canonical: "/contact",
+  },
 }
 
 export default function ContactPage() {
