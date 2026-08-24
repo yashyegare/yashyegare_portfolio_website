@@ -1,6 +1,26 @@
 import type React from "react"
 import type { Metadata } from "next/dist/lib/metadata/types/metadata-interface"
 import ClientLayout from "./ClientLayout"
+import { Analytics } from '@vercel/analytics/react';
+ 
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <title>Yash Yegare | Portfolio</title>
+      </head>
+      <body>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  );
+}
+
 
 export const metadata: Metadata = {
   title: {
