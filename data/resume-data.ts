@@ -31,6 +31,7 @@ export type ResumeData = {
     photo?: string
     yearsOfExperience: string
     teamLeadExperience: string
+    College: string
   }
   summary: string[]
   skills: {
@@ -38,7 +39,7 @@ export type ResumeData = {
     // architecture: string[]
     cloud: string[]
     data: string[]
-    quality: string[]
+    Tools: string[]
   }
   experience: WorkExperience[]
   hardSkills: string[]
