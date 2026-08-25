@@ -76,6 +76,7 @@ export default function ContactPage() {
                   LinkedIn
                 </Link>
 
+                
                 <a
                   href={`mailto:${email}`}
                   className="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 rounded-md px-4 py-2 transition-colors"

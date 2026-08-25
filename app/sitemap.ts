@@ -2,11 +2,6 @@ import type { MetadataRoute } from "next"
 
 const SITE_URL = "https://www.yashyegare.me"
 
-// NOTE: /blog, /talks, and /publications are intentionally excluded below.
-// They currently hold unfinished template placeholder content (sample posts,
-// talks, and papers that aren't yours). Add them back once real content is
-// in place, or delete the routes if you don't plan to use them.
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     {
