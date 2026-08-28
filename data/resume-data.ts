@@ -73,6 +73,17 @@ const resumeData: ResumeData = {
     Tools: ["GIT", "Linux", "Postman", "Figma"],
   },
   experience: [
+
+     {
+      title: "SDE Intern",
+      company: "Stealth Startup",
+      period: "Aug 2026 - Present",
+      location: "Remote",
+      responsibilities: [
+        "Focus areas: Backend Development, Data Systems, Cloud Object Storage, Docker, VPS Infrastructure, System Scaling.",
+      ],
+    },
+
     {
       title: "Technical Consultant",
       company: "Stealth Startup",
