@@ -100,6 +100,51 @@ export default function ResumePage() {
             </Card>
           </div>
 
+          {/* Add leadership section here */}
+          {resumeData.leadership && resumeData.leadership.length > 0 && (
+            <div className="space-y-6">
+              <h2 className="text-2xl font-bold">Leadership & Involvement</h2>
+              {resumeData.leadership.map((role, index) => (
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <div className="flex flex-col justify-between gap-2 md:flex-row">
+                      <div>
+                        <h3 className="text-xl font-bold">{role.title}</h3>
+                        <p className="text-muted-foreground">{role.organization}</p>
+                      </div>
+                      <div className="text-right text-muted-foreground">
+                        <p>{role.period}</p>
+                      </div>
+                    </div>
+                    <p className="mt-2">{role.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          )}
+
+          
+          {resumeData.communityInvolvement && resumeData.communityInvolvement.length > 0 && (
+            <div className="space-y-4">
+              <h2 className="text-2xl font-bold">Community Involvement</h2>
+              <Card>
+                <CardContent className="p-6 divide-y divide-border">
+                  {resumeData.communityInvolvement.map((role, index) => (
+                    <div key={index} className={index > 0 ? "pt-4 mt-4" : ""}>
+                      <div className="flex flex-col justify-between gap-1 md:flex-row md:items-baseline">
+                        <p className="font-semibold">
+                          {role.role} <span className="text-muted-foreground font-normal">· {role.organization}</span>
+                        </p>
+                        <p className="text-sm text-muted-foreground">{role.period}</p>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-1">{role.description}</p>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+            </div>
+          )}
+
           {/* Add publications section here */}
           {resumeData.publications && resumeData.publications.length > 0 && (
             <div className="space-y-6">

@@ -46,6 +46,8 @@ export type ResumeData = {
   softSkills: string[]
   languages: Language[]
   publications: Publication[]
+  leadership: LeadershipRole[]
+  communityInvolvement: CommunityRole[]
 }
 
 const resumeData: ResumeData = {
@@ -196,6 +198,86 @@ const resumeData: ResumeData = {
     //   year: "2017",
     // },
   ],
+
+    leadership: [
+    {
+      title: "Postman Student Expert",
+      organization: "Postman",
+      period: "Apr 2023 - May 2024",
+      description: "Actively educating students on API development, testing, and collaboration workflows using Postman.",
+    },
+    {
+      title: "PoC - GDSC WOW",
+      organization: "GDSC Pune",
+      period: "Mar 2023 - Mar 2023",
+      description: "Point of contact for GDSC Pune's flagship event WOW.",
+    },
+    {
+      title: "Core Team Member",
+      organization: "GDSC AISSMS IOIT Pune",
+      period: "Sep 2022 - Aug 2023",
+      description: "Cloud & Outreach.",
+    },
+    {
+      title: "TnP Head, Computer Engineering Students' Association",
+      organization: "AISSMS IOIT",
+      period: "Jul 2022 - Jun 2023",
+      description: "Training and placement POC for the Computer Department.",
+    },
+    {
+      title: "Core Team Member",
+      organization: "AISSMS IOIT ACM Student Chapter",
+      period: "Jul 2022 - May 2023",
+      description: "Contributed across advisory, finance, and event management, supporting planning, execution, and smooth operations of technical initiatives.",
+    },
+    {
+      title: "University Leader",
+      organization: "We Make Devs",
+      period: "Jun 2021 - Jun 2023",
+      description: "Worked towards making education accessible to all, for free. Established the community at my university, responsible for creating awareness, conducting workshops, and growing the programming culture on campus.",
+    },
+  ],
+
+    communityInvolvement: [
+    {
+      role: "Community Member",
+      organization: "PUNE DAO",
+      period: "Jan 2023 - Present",
+      description: "Initiative designed to foster growth & development of the Web3 ecosystem within the city of Pune, bringing together blockchain developers, entrepreneurs, and enthusiasts.",
+    },
+    {
+      role: "Community Member",
+      organization: "Tech Thrusters",
+      period: "Jan 2023 - Present",
+      description: "A thriving community of innovators, creators, and lifelong learners.",
+    },
+    {
+      role: "Global Member",
+      organization: "Internet Society",
+      period: "Dec 2022 - Present",
+      description: "A global charity working to close the digital divide and advocate for a secure and open Internet that people can trust.",
+    },
+    {
+      role: "Member",
+      organization: "CNCF Pune",
+      period: "May 2021 - Present",
+      description: "The Cloud Native Computing Foundation is a subsidiary of the Linux Foundation, founded in 2015 to support cloud-native computing.",
+    },
+  ],
+}
+
+export type LeadershipRole = {
+  title: string
+  organization: string
+  period: string
+  description: string
+}
+
+export type CommunityRole = {
+  role: string
+  organization: string
+  period: string
+  description: string
 }
 
 export default resumeData
